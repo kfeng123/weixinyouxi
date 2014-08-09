@@ -2,6 +2,8 @@
 var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update });
 
 function preload() {
+	game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    game.scale.setScreenSize();
 
     game.load.atlas('breakout', 'breakout.png', 'breakout.json');
     game.load.image('starfield', 'starfield.jpg');
