@@ -1,5 +1,5 @@
 
-var game = new Phaser.Game(800, 1200, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update });
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update });
 
 function preload() {
 	game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
