@@ -84,6 +84,6 @@ function gameover(){
 
 function render() {
 
-    game.debug.spriteInfo(plane, 32, 32);
-	game.debug.cameraInfo(game.camera, 32, 200);
+    //game.debug.spriteInfo(plane, 32, 32);
+	//game.debug.cameraInfo(game.camera, 32, 200);
 }
