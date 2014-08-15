@@ -44,7 +44,6 @@ function create() {
 		var temp;
 		temp=pipe.create(i%2*400,h,'pipe');
 		temp.body.immovable=true;
-		
 	}
 	
 }
