@@ -151,6 +151,7 @@ MYgame.States.Game={
 		}
 	},
 	update:function(){
+		MYgame.States.Gameover.score=this.score;
 		this.scoretext.setText(this.score+'');
 		
 		
@@ -222,6 +223,8 @@ MYgame.States.Gameover={
 		var style = { font: "65px Arial", fill: "#ff0044", align: "center" };
 
 		var t = MYgame.game.add.text(MYgame.game.camera.x+MYgame.game.camera.width/2, MYgame.game.camera.y+MYgame.game.camera.height/2, text, style);
+		MYgame.game.add.text(MYgame.game.camera.x+MYgame.game.camera.width/2-100, MYgame.game.camera.y+MYgame.game.camera.height/2-100, this.score+'', style);
+		
 		this.button=MYgame.game.add.button(100,100,'button',MYgame.States.Menu.startgame,this,0,0,0);
 	},
 	update:function(){},
