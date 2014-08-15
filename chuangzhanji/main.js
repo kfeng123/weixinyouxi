@@ -48,7 +48,7 @@ MYgame.States.Menu={
 	
 	},
 	create:function(){
-		MYgame.States.Menu.button=MYgame.game.add.button(100,100,'button',MYgame.States.Menu.startgame,this,2,1,0);
+		MYgame.States.Menu.button=MYgame.game.add.button(100,100,'button',MYgame.States.Menu.startgame,this,0,0,0);
 		
 	},
 	upload:function(){
@@ -222,7 +222,7 @@ MYgame.States.Gameover={
 		var style = { font: "65px Arial", fill: "#ff0044", align: "center" };
 
 		var t = MYgame.game.add.text(MYgame.game.camera.x+MYgame.game.camera.width/2, MYgame.game.camera.y+MYgame.game.camera.height/2, text, style);
-		this.button=MYgame.game.add.button(100,100,'button',MYgame.States.Menu.startgame,this,2,1,0);
+		this.button=MYgame.game.add.button(100,100,'button',MYgame.States.Menu.startgame,this,0,0,0);
 	},
 	update:function(){},
 	render:function(){
